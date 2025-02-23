@@ -5,9 +5,9 @@
 
 ---
 
-### Name: 
-### Student Id: 
-### Email: 
+### Name: CAI, Huaiyu
+### Student Id: 21139725
+### Email: hcaiai@connect.ust.hk
 
 ---
 
@@ -23,7 +23,7 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro` |                 |                    |
+    | `t2.micro` | Compre: 3699MIPS; Decompre: 3099MIPS |                    |
     | `t2.medium`  |                 |                    |
     | `c5d.large` |                 |                    |
 
