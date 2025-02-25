@@ -15,7 +15,7 @@
 
 1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
-    > Your answer goes here.
+    > Your answer goes here. I used Phoronix Test Suite (PTS) to completed CPU performance and memory performance testings. For CPU testings, I utilize pts/compress-7zip, and forcusing on Integer Copy Test, which best reflects basic memory performance as well as copy is the most fundamental memory operation. Using auto-selection of test data size prevents memory pressure, 3 rounds ensure result reliability, batch mode ensures consistent testing conditions. The results of means how many MB integer data per second the system can copy, reflecting the data transfer capability of the memory subsystem.
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
 
@@ -24,8 +24,8 @@
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
     | `t2.micro` | Compre: 3699MIPS; Decompre: 3099MIPS | Copy(int): 10935.33 MB/s; Random Write: 144.842 MB/s; Random Read: 2561.599 MB/s |
-    | `t2.medium`  | Compre: ; Decompre:  | Copy(int): 19260.19 MB/s                   |
-    | `c5d.large` |                 |                    |
+    | `t2.medium`  | Compre: 9835 MIPS; Decompre: 5786 MIPS | Copy(int): 19260.19 MB/s; Random Write: 147.730 MB/s; Random Read:  58745.767 MB/s|
+    | `c5d.large` | Compre: 7552 MIPS; Decompre:  4896 MIPS| Copy(int): 13801.99 MB/s; Random Write: 188.215 MB/s; Random Read:  80723.445 MB/s|
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
 
