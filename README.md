@@ -23,8 +23,8 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro` | Compre: 3699MIPS; Decompre: 3099MIPS |                    |
-    | `t2.medium`  |                 |                    |
+    | `t2.micro` | Compre: 3699MIPS; Decompre: 3099MIPS | Copy(int): 10935.33 MB/s; Random Write: 144.842 MB/s; Random Read: 2561.599 MB/s |
+    | `t2.medium`  | Compre: ; Decompre:  | Copy(int): 19260.19 MB/s                   |
     | `c5d.large` |                 |                    |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
